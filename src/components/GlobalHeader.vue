@@ -61,12 +61,9 @@ router.afterEach((to, from, failure) => {
 
 console.log();
 
-setTimeout(() => {
-  store.dispatch("user/getLoginUser", {
-    userName: "小陈同学",
-    userRole: ACCESS_ENUM.ADMIN,
-  });
-}, 3000);
+// setTimeout(() => {
+//   store.dispatch("user/getLoginUser");
+// }, 3000);
 
 const doMenuClick = (key: string) => {
   router.push({
